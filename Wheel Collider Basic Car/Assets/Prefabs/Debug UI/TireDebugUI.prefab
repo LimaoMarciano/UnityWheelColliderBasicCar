@@ -302,5 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffeb20c4647e04d4983546097a2839bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slipValueText: {fileID: 2310230954815887325}
+  valueText: {fileID: 2310230954815887325}
   wheelCollider: {fileID: 0}
+  wheelMesh: {fileID: 0}
+  wheelDebugType: 0
+  changeColor: 0

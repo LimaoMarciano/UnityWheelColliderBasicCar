@@ -19,9 +19,35 @@ public class TireDebug : MonoBehaviour
         RR.wheelCollider = targetCar.rearRightWheel;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetDebugModeSideSlip ()
     {
-        
+        FL.wheelDebugType = TireDebugUI.WheelDebugType.SDW_SLIP;
+        FR.wheelDebugType = TireDebugUI.WheelDebugType.SDW_SLIP;
+        RL.wheelDebugType = TireDebugUI.WheelDebugType.SDW_SLIP;
+        RR.wheelDebugType = TireDebugUI.WheelDebugType.SDW_SLIP;
+    }
+
+    public void SetDebugModeFwdSlip()
+    {
+        FL.wheelDebugType = TireDebugUI.WheelDebugType.FWD_SLIP;
+        FR.wheelDebugType = TireDebugUI.WheelDebugType.FWD_SLIP;
+        RL.wheelDebugType = TireDebugUI.WheelDebugType.FWD_SLIP;
+        RR.wheelDebugType = TireDebugUI.WheelDebugType.FWD_SLIP;
+    }
+
+    public void SetDebugModeAllSlip()
+    {
+        FL.wheelDebugType = TireDebugUI.WheelDebugType.ALL_SLIP;
+        FR.wheelDebugType = TireDebugUI.WheelDebugType.ALL_SLIP;
+        RL.wheelDebugType = TireDebugUI.WheelDebugType.ALL_SLIP;
+        RR.wheelDebugType = TireDebugUI.WheelDebugType.ALL_SLIP;
+    }
+
+    public void SetDebugModeForce()
+    {
+        FL.wheelDebugType = TireDebugUI.WheelDebugType.FORCE;
+        FR.wheelDebugType = TireDebugUI.WheelDebugType.FORCE;
+        RL.wheelDebugType = TireDebugUI.WheelDebugType.FORCE;
+        RR.wheelDebugType = TireDebugUI.WheelDebugType.FORCE;
     }
 }

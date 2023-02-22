@@ -57,6 +57,11 @@ public class Car : MonoBehaviour
         set { throttle = Mathf.Clamp01(value); }
     }
 
+    public float FLForwardSlip { get { return frontLeftWheelFwdSlip; } }
+    public float FRForwardSlip { get { return frontRightWheelFwdSlip; } }
+    public float RLForwardSlip { get { return rearLeftWheelFwdSlip; } }
+    public float RRForwardSlip { get { return rearRightWheelFwdSlip; } }
+
     // Start is called before the first frame update
     void Start()
     {
