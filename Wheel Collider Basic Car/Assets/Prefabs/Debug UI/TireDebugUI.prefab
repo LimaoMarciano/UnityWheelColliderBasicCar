@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueText: {fileID: 2310230954815887325}
+  bgImage: {fileID: 6067284220024645534}
   wheelCollider: {fileID: 0}
   wheelMesh: {fileID: 0}
   wheelDebugType: 0

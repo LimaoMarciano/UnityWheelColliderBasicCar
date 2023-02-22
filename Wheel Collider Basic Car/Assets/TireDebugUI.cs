@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TireDebugUI : MonoBehaviour
 {
     public TMP_Text valueText;
+    public Image bgImage;
     public WheelCollider wheelCollider;
     public MeshRenderer wheelMesh;
 
@@ -44,19 +46,23 @@ public class TireDebugUI : MonoBehaviour
                 case WheelDebugType.FWD_SLIP:
                     valueText.text = hit.forwardSlip.ToString("F1");
                     materialColor = Color.Lerp(lowValueColor, highValueColor, Mathf.Abs(hit.forwardSlip));
+                    bgImage.color = materialColor;
                     break;
                 case WheelDebugType.SDW_SLIP:
                     valueText.text = hit.sidewaysSlip.ToString("F1");
                     materialColor = Color.Lerp(lowValueColor, highValueColor, Mathf.Abs(hit.forwardSlip));
+                    bgImage.color = materialColor;
                     break;
                 case WheelDebugType.ALL_SLIP:
                     float value = Mathf.Max(Mathf.Abs(hit.sidewaysSlip), Mathf.Abs(hit.forwardSlip));
                     valueText.text = value.ToString("F1");
                     materialColor = Color.Lerp(lowValueColor, highValueColor, value);
+                    bgImage.color = materialColor;
                     break;
                 case WheelDebugType.FORCE:
                     valueText.text = hit.force.ToString("F0");
                     materialColor = Color.Lerp(lowValueColor, highValueColor, Mathf.Abs(hit.force / 4000f));
+                    bgImage.color = materialColor;
                     break;
             }
 
