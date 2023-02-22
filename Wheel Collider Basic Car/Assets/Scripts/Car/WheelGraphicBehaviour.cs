@@ -52,7 +52,7 @@ public class WheelGraphicBehaviour : MonoBehaviour
 
         if (wheelCollider.GetGroundHit(out hit))
         {
-            if (Mathf.Abs(hit.forwardSlip) > 0.3f)
+            if (Mathf.Max(Mathf.Abs(hit.forwardSlip), Mathf.Abs(hit.sidewaysSlip)) > 0.5f)
             {
                 emission.enabled = true;
             }

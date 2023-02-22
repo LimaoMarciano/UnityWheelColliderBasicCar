@@ -4297,14 +4297,14 @@ MonoBehaviour:
   cameraObstacleLayers:
     serializedVersion: 2
     m_Bits: 0
-  distance: 10
+  distance: 15
   smoothness: 0.2
-  minVerticalAngle: 0
+  minVerticalAngle: 20
   maxVerticalAngle: 89
   minHorizontalAngle: 0
   maxHorizontalAngle: 360
-  verticalAngle: 32
-  horizontalAngle: 51
+  verticalAngle: 26
+  horizontalAngle: 43
 --- !u!1001 &996338384
 PrefabInstance:
   m_ObjectHideFlags: 0
